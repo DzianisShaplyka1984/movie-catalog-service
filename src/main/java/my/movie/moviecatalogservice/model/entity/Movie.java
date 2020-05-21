@@ -2,14 +2,16 @@ package my.movie.moviecatalogservice.model.entity;
 
 public class Movie {
     private String movieId;
-    private String name;
+    private String title;
+    private String overview;
 
     public Movie() {
     }
 
-    public Movie(final String movieId, final String name) {
+    public Movie(final String movieId, final String title, final String overview) {
         this.movieId = movieId;
-        this.name = name;
+        this.title = title;
+        this.overview = overview;
     }
 
     public String getMovieId() {
@@ -20,11 +22,19 @@ public class Movie {
         this.movieId = movieId;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(final String name) {
-        this.name = name;
+    public void setTitle(final String title) {
+        this.title = title;
+    }
+
+    public String getOverview() {
+        return overview;
+    }
+
+    public void setOverview(final String overview) {
+        this.overview = overview;
     }
 }

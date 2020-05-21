@@ -37,7 +37,7 @@ public class MovieCatalogController {
 //                    retrieve().
 //                    bodyToMono(Movie.class).
 //                    block();
-            return new MovieCatalog(movie.getName(), "Desc1", rating.getRating());
+            return new MovieCatalog(movie.getTitle(), movie.getOverview(), rating.getRating());
         }).collect(Collectors.toList());
 
     }
